@@ -18,7 +18,7 @@ public class MyFrame extends JFrame {
                 this.setSize(GameProperties.BOARD_LENGTH, GameProperties.BOARD_WIDTH);
                 this.setResizable(false);
                 this.setLocationRelativeTo(null);
-                this.getContentPane().setBackground(Color.white);//Properties
+                this.getContentPane().setBackground(GameProperties.MyColor.BASIC_COLOR);//Properties
                 this.setLayout(null);
             JLabel cardLabel = new JLabel();
             cardLabel.setIcon(square);
