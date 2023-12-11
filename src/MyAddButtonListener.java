@@ -6,8 +6,8 @@ public class MyAddButtonListener implements MouseListener {
     private JButton addButton;
     private ImageIcon[] pluses;
     MyAddButtonListener(JButton addButton, ImageIcon[] pluses){
-        this.addButton = this.addButton;
-        this.pluses = this.pluses;
+        this.addButton = addButton;
+        this.pluses = pluses;
     }
     @Override
     public void mouseEntered(MouseEvent e) {

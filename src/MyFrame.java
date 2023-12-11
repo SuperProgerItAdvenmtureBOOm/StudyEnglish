@@ -6,6 +6,7 @@ import java.security.Key;
 
 public class MyFrame extends JFrame {
     MyFrame(){
+            //MyAddButtonListener listener = new MyAddButtonListener(addButton,pluses);
             ImageIcon square = new ImageIcon("orangeSquare2.png");//properties:400x220
             ImageIcon[] pluses = {new ImageIcon("plus.png"),new ImageIcon("plus2.png"),
                     new ImageIcon("plus3.png"),new ImageIcon("plus4.png")};//properties:50x50
@@ -30,12 +31,6 @@ public class MyFrame extends JFrame {
             inputField.setCaretColor(GameProperties.MyColor.BASIC_COLOR);
             inputField.setBorder(BorderFactory.createEmptyBorder());
             inputField.setFont(new Font("Times New Roman",Font.PLAIN,30));
-            inputField.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println("hui");
-                }
-            });
 
             JButton addButton = new JButton();
             addButton.setLocation(720,10);
@@ -44,7 +39,8 @@ public class MyFrame extends JFrame {
             addButton.setFocusPainted(false);
             addButton.setContentAreaFilled(false);
             addButton.setBorderPainted(false);
-            addButton.addMouseListener(new MyAddButtonListener(addButton,pluses));
+            MyAddButtonListener listener = new MyAddButtonListener(addButton,pluses);
+            addButton.addMouseListener(listener);
 
 
                 this.setVisible(true);
