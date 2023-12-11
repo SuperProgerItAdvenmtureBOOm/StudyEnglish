@@ -1,3 +1,5 @@
+package ActionListeners;
+
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -5,7 +7,7 @@ import java.awt.event.MouseListener;
 public class MyAddButtonListener implements MouseListener {
     private JButton addButton;
     private ImageIcon[] pluses;
-    MyAddButtonListener(JButton addButton, ImageIcon[] pluses){
+    public MyAddButtonListener(JButton addButton, ImageIcon[] pluses){
         this.addButton = addButton;
         this.pluses = pluses;
     }
