@@ -13,6 +13,7 @@ public class GameProperties {
     public static final int ADD_BUTTON_SIZE = 60;
     public class MyColor{
         public static final Color BASIC_COLOR = white;
-        public static final Color SECOND_COLOR = new Color(253,198,137);
+        public static final Color SECOND_COLOR = new Color(241,143,22);
+        public static final Color THIRD_COLOR = new Color(37,114,177);
     }
 }

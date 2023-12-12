@@ -25,6 +25,5 @@ public class tests {
         Pattern pat = Pattern.compile(String.valueOf(strB));
         System.out.println(pat.matcher("hui").matches());
 
-
     }
 }
