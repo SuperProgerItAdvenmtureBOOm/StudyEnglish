@@ -35,7 +35,7 @@ public class AddFrame extends JFrame {
 
             JTextField inputRussianField = new JTextField();
             inputRussianField.setSize(200,50);
-            inputRussianField.setLocation(100,10);
+            inputRussianField.setLocation(100,70);
             inputRussianField.setBackground(GameProperties.MyColor.THIRD_COLOR);
             inputRussianField.setForeground(GameProperties.MyColor.SECOND_COLOR);
             inputRussianField.setCaretColor(GameProperties.MyColor.SECOND_COLOR);
@@ -45,7 +45,7 @@ public class AddFrame extends JFrame {
 
             JTextField inputEnglishField = new JTextField();
             inputEnglishField.setSize(200,50);
-            inputEnglishField.setLocation(100,70);
+            inputEnglishField.setLocation(100,10);
             inputEnglishField.setBackground(GameProperties.MyColor.THIRD_COLOR);
             inputEnglishField.setForeground(GameProperties.MyColor.SECOND_COLOR);
             inputEnglishField.setCaretColor(GameProperties.MyColor.SECOND_COLOR);

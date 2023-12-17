@@ -55,7 +55,9 @@ public class MyAddButtonListener implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
+
         addButton.setIcon(pluses[3]);
+
     }
 
     @Override

@@ -6,5 +6,6 @@ public class WrongInputWordException extends Exception{
     }
 
     public void printWarning() {
+        System.out.println("warning");
     }
 }
