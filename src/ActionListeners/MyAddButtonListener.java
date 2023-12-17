@@ -1,5 +1,7 @@
 package ActionListeners;
 
+import Frames.AddFrame;
+
 import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -57,7 +59,7 @@ public class MyAddButtonListener implements MouseListener {
     public void mousePressed(MouseEvent e) {
 
         addButton.setIcon(pluses[3]);
-
+        AddFrame secondFrame = new AddFrame();
     }
 
     @Override

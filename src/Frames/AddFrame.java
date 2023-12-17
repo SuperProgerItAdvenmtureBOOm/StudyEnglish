@@ -1,5 +1,8 @@
+package Frames;
+
 import ActionListeners.AddNewWordActionListener;
 import MyExceptions.WrongInputWordException;
+import Other.GameProperties;
 
 import javax.swing.*;
 import java.awt.*;

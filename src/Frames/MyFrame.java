@@ -1,4 +1,7 @@
+package Frames;
+
 import ActionListeners.MyAddButtonListener;
+import Other.GameProperties;
 
 import javax.swing.*;
 import javax.swing.plaf.IconUIResource;
@@ -8,7 +11,7 @@ import java.security.Key;
 
 
 public class MyFrame extends JFrame {
-    MyFrame(){
+    public MyFrame(){
 
             ImageIcon square = new ImageIcon("orangeSquare2.png");//properties:400x220
             ImageIcon[] pluses = {new ImageIcon("plus.png"),new ImageIcon("plus2.png"),
@@ -18,12 +21,13 @@ public class MyFrame extends JFrame {
                 this.setSize(GameProperties.BOARD_LENGTH, GameProperties.BOARD_WIDTH);
                 this.setResizable(false);
                 this.setLocationRelativeTo(null);
-                this.getContentPane().setBackground(GameProperties.MyColor.BASIC_COLOR);//Properties
+                this.getContentPane().setBackground(GameProperties.MyColor.THIRD_COLOR);//Properties
                 this.setLayout(null);
             JLabel cardLabel = new JLabel();
-            cardLabel.setIcon(square);
+            cardLabel.setBackground(GameProperties.MyColor.SECOND_COLOR);
             cardLabel.setLocation(GameProperties.BOARD_LENGTH/2- GameProperties.CARD_LABEL_WIDTH/2,100);
             cardLabel.setSize(GameProperties.CARD_LABEL_WIDTH, GameProperties.CARD_LABEL_HEIGHT);
+            cardLabel.setOpaque(true);
 
             JTextField inputField = new JTextField();
             inputField.setLocation(GameProperties.BOARD_LENGTH/2- GameProperties.TEXT_FIELD_WIDTH/2,400);

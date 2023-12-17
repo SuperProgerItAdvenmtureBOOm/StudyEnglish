@@ -14,11 +14,13 @@ import static java.lang.System.exit;
 public class AddNewWordActionListener implements ActionListener {
     JTextField engTextField;
     JTextField rusTextField;
+    JFrame currentFrame;
     public AddNewWordActionListener(JTextField engTextField, JTextField rusTextField,JFrame frame) {
         // 1040 - 1103 russian symbols
         // 65-90
         this.engTextField = engTextField;
         this.rusTextField = rusTextField;
+        currentFrame = frame;
     }
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -55,7 +57,7 @@ public class AddNewWordActionListener implements ActionListener {
                     //otherwise
                     //logic of writing info into a file;
                     //
-                    System.exit(0);
+                    currentFrame.setVisible(false);
                 }
     }
 }
