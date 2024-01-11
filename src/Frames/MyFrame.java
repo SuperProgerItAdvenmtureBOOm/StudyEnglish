@@ -1,6 +1,7 @@
 package Frames;
 
 import ActionListeners.MyAddButtonListener;
+import ActionListeners.TranslationListener;
 import Other.GameProperties;
 
 import javax.swing.*;
@@ -24,7 +25,7 @@ public class MyFrame extends JFrame {
                 this.getContentPane().setBackground(GameProperties.MyColor.THIRD_COLOR);//Properties
                 this.setLayout(null);
             JLabel cardLabel = new JLabel();
-            cardLabel.setBackground(GameProperties.MyColor.SECOND_COLOR);
+            cardLabel.setBackground(GameProperties.MyColor.BASIC_COLOR);
             cardLabel.setLocation(GameProperties.BOARD_LENGTH/2- GameProperties.CARD_LABEL_WIDTH/2,100);
             cardLabel.setSize(GameProperties.CARD_LABEL_WIDTH, GameProperties.CARD_LABEL_HEIGHT);
             cardLabel.setOpaque(true);
@@ -33,11 +34,13 @@ public class MyFrame extends JFrame {
             inputField.setLocation(GameProperties.BOARD_LENGTH/2- GameProperties.TEXT_FIELD_WIDTH/2,400);
             inputField.setSize(GameProperties.TEXT_FIELD_WIDTH, GameProperties.TEXT_FIELD_HEIGHT);
             inputField.getActionForKeyStroke(KeyStroke.getKeyStroke(GameProperties.INPUT_CHAR));
-            inputField.setBackground(GameProperties.MyColor.SECOND_COLOR);
-            inputField.setForeground(GameProperties.MyColor.BASIC_COLOR);
-            inputField.setCaretColor(GameProperties.MyColor.BASIC_COLOR);
+
+            inputField.addActionListener(new TranslationListener());
+            inputField.setBackground(GameProperties.MyColor.BASIC_COLOR);
+            inputField.setForeground(GameProperties.MyColor.THIRD_COLOR);
+            inputField.setCaretColor(GameProperties.MyColor.THIRD_COLOR);
             inputField.setBorder(BorderFactory.createEmptyBorder());
-            inputField.setFont(new Font("Times New Roman",Font.PLAIN,30));
+            inputField.setFont(new Font("Times New Roman",Font.PLAIN,50));
 
             JButton addButton = new JButton();
             addButton.setLocation(720,10);

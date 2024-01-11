@@ -1,5 +1,6 @@
 package ActionListeners;
 
+import Checks.TranslationCheck;
 import MyExceptions.WrongInputWordException;
 
 import javax.swing.*;
@@ -27,18 +28,10 @@ public class AddNewWordActionListener implements ActionListener {
 //if typed texts have symbols that are not dedicated to their alphabet - an exception throws
         String english = engTextField.getText();
         String russian = rusTextField.getText();
-        boolean engWarningFlag = false;
-        boolean rusWarningFlag = false;
-        for(char element :english.toCharArray()){
-            if(((int)element < 65 || (int)element > 90 )&&((int)element < 97 || (int)element > 122)) {
-                engWarningFlag = true;
-            }
-        }
-        for(char element :russian.toCharArray()) {
-            if (((int) element < 1040 || (int) element > 1103)) {
-                rusWarningFlag = true;
-            }
-        }
+        boolean engWarningFlag ;
+        boolean rusWarningFlag ;
+        engWarningFlag = TranslationCheck.EnglishWordCheck(english)?false:true;
+        rusWarningFlag = TranslationCheck.RussianWordCheck(russian)?false:true;
         //in case of wrong input
                 if (rusWarningFlag || engWarningFlag) {
                     try {

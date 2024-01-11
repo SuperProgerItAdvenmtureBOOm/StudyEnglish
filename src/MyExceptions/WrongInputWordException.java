@@ -1,11 +1,13 @@
 package MyExceptions;
 
+import javax.swing.*;
+
 public class WrongInputWordException extends Exception{
     public WrongInputWordException(){
 
     }
 
     public void printWarning() {
-        System.out.println("warning");
+        JOptionPane.showMessageDialog(null,"check your input","warn",JOptionPane.WARNING_MESSAGE);
     }
 }

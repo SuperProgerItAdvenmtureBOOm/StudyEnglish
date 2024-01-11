@@ -17,9 +17,9 @@ public class AddFrame extends JFrame {
         this.setSize(400,170);
 
             JLabel engLabel = new JLabel("Eng");
-            engLabel.setFont(new Font("Times New Roman",Font.BOLD,30));
+            engLabel.setFont(new Font("Times New Roman",Font.PLAIN,30));
             engLabel.setForeground(GameProperties.MyColor.SECOND_COLOR);
-            engLabel.setBackground(GameProperties.MyColor.THIRD_COLOR);
+            engLabel.setBackground(GameProperties.MyColor.BASIC_COLOR);
             engLabel.setSize(80,50);
             engLabel.setLocation(10,10);
             engLabel.setOpaque(true);
@@ -27,9 +27,9 @@ public class AddFrame extends JFrame {
 
 
             JLabel rusLabel = new JLabel("Rus");
-            rusLabel.setFont(new Font("Times New Roman",Font.BOLD,30));
+            rusLabel.setFont(new Font("Times New Roman",Font.PLAIN,30));
             rusLabel.setForeground(GameProperties.MyColor.SECOND_COLOR);
-            rusLabel.setBackground(GameProperties.MyColor.THIRD_COLOR);
+            rusLabel.setBackground(GameProperties.MyColor.BASIC_COLOR);
             rusLabel.setSize(80,50);
             rusLabel.setLocation(10,70);
             rusLabel.setOpaque(true);
@@ -39,27 +39,27 @@ public class AddFrame extends JFrame {
             JTextField inputRussianField = new JTextField();
             inputRussianField.setSize(200,50);
             inputRussianField.setLocation(100,70);
-            inputRussianField.setBackground(GameProperties.MyColor.THIRD_COLOR);
+            inputRussianField.setBackground(GameProperties.MyColor.BASIC_COLOR);
             inputRussianField.setForeground(GameProperties.MyColor.SECOND_COLOR);
             inputRussianField.setCaretColor(GameProperties.MyColor.SECOND_COLOR);
             inputRussianField.setBorder(BorderFactory.createEmptyBorder());
-            inputRussianField.setFont(new Font("Times New Roman",Font.BOLD,30));
+            inputRussianField.setFont(new Font("Times New Roman",Font.PLAIN,30));
 
 
             JTextField inputEnglishField = new JTextField();
             inputEnglishField.setSize(200,50);
             inputEnglishField.setLocation(100,10);
-            inputEnglishField.setBackground(GameProperties.MyColor.THIRD_COLOR);
+            inputEnglishField.setBackground(GameProperties.MyColor.BASIC_COLOR);
             inputEnglishField.setForeground(GameProperties.MyColor.SECOND_COLOR);
             inputEnglishField.setCaretColor(GameProperties.MyColor.SECOND_COLOR);
             inputEnglishField.setBorder(BorderFactory.createEmptyBorder());
-            inputEnglishField.setFont(new Font("Times New Roman",Font.BOLD,30));
+            inputEnglishField.setFont(new Font("Times New Roman",Font.PLAIN,30));
 
 
             JButton addButton = new JButton("+");
             addButton.setFont(new Font("Times New Roman",Font.BOLD,50));
-            addButton.setBackground(GameProperties.MyColor.THIRD_COLOR);
-            addButton.setForeground(GameProperties.MyColor.BASIC_COLOR);
+            addButton.setBackground(GameProperties.MyColor.BASIC_COLOR);
+            addButton.setForeground(GameProperties.MyColor.SECOND_COLOR);
             addButton.setSize(65,110);
             addButton.setLocation(310,10);
             addButton.setFocusable(false);
